@@ -34,6 +34,9 @@ const myModule = {
 	},
 };
 
+//! myModule.domElement = null;
+//! this will ruin the modular version currently. Not sure how to fix.
+
 // const myfunction = () => {
 // 	console.log('hazzzaaaa! you clicked me!');
 // };

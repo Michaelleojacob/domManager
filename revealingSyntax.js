@@ -35,18 +35,20 @@ const domManager = (function () {
 	return { domElement };
 })();
 
-// const myfunction = () => {
-// 	console.log('hazzzaaaa! you clicked me!');
-// };
+// domManager.domElement = null;
 
-// const container = document.querySelector('#container');
-// container.appendChild(
-// 	domManager.domElement({
-// 		type: 'button',
-// 		text: 'hello',
-// 		classes: ['class1', 'class2'],
-// 		attributes: { style: 'background:pink' },
-// 		events: [{ type: 'click', handler: myfunction }],
-// 		children: [domManager.domElement({ text: 'world' })],
-// 	})
-// );
+const myfunction = () => {
+	console.log('hazzzaaaa! you clicked me!');
+};
+
+const container = document.querySelector('#container');
+container.appendChild(
+	domManager.domElement({
+		type: 'button',
+		text: 'hello',
+		classes: ['class1', 'class2'],
+		attributes: { style: 'background:pink' },
+		events: [{ type: 'click', handler: myfunction }],
+		children: [domManager.domElement({ text: 'world' })],
+	})
+);
